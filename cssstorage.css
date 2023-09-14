@@ -1,0 +1,105 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9c9a9a;
+}
+
+/* Center the buttons */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f9dd81;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff09b;
+}
+
+/* Style the form container */
+.create_form {
+    display: none;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Style the form inputs and labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    background-color: #f9dd81;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #fff09b;
+}
+
+/* Style the data table */
+.data_table {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.data_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data_table th, .data_table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.data_table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.data_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .create_form, .data_table {
+        width: 90%;
+    }
+}
